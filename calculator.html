@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<style type="text/css">
+			
+			body {
+				background-image: url("C:Users/Ambika/desktop/leaf.jpg");
+				background-size: cover;
+			}
+
+			.box {
+				width: 500px;
+				height: 500px;
+				position: relative;
+				top: 100px;
+				background-color: rgb(84, 86, 84);
+				margin-left: 35%;
+				border-radius: 10px;
+				
+			}
+
+			.displayRow {
+				height: 50px;
+				width: 80px;
+				top: 30px;
+				left: 30px;
+				position: relative;
+			}
+
+			.displayRow input {
+				height: 80px;
+				width: 400px;
+				font-size: 45px;
+				margin-left: 40px;
+				margin-right: 20px;
+				margin-top: 30px;
+			}
+
+			.button {
+				height: 50px;
+				width: 70px;
+				border-radius: 7px;
+				font-size: 30px;
+				color: rgba(33, 31, 30, 0.5);
+				position: relative;
+				margin-left: 40px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			.gray.button {
+				background-color: #c0c6d1;
+				
+			}
+
+			.green.button {
+				background-color: rgb(72, 160, 89);
+			}
+
+			.blue.button {
+				background-color: #569fd3;
+			}
+
+		</style>
+	</head>
+	<body>
+
+	<div class="box">
+	
+		<form name="calculator">
+			<table>
+				<tr class="displayRow">
+					<td>
+						<input type="text" name="input">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input type="button" class="gray button" value="1" onclick="calculator.input.value += '1'">
+						<input type="button" class="gray button" value="2" onclick="calculator.input.value += '2'">
+						<input type="button" class="gray button" value="3" onclick="calculator.input.value += '3'">
+						<input type="button" class="blue button" value="+" onclick="calculator.input.value += '+'">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input type="button" class="gray button" value="4" onclick="calculator.input.value += '4'">
+						<input type="button" class="gray button" value="5" onclick="calculator.input.value += '5'">
+						<input type="button" class="gray button" value="6" onclick="calculator.input.value += '6'">
+						<input type="button" class="blue button" value="-" onclick="calculator.input.value += '-'">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input type="button" class="gray button" value="7" onclick="calculator.input.value += '7'">
+						<input type="button" class="gray button" value="8" onclick="calculator.input.value += '8'">
+						<input type="button" class="gray button" value="9" onclick="calculator.input.value += '9'">
+						<input type="button" class="blue button" value="*" onclick="calculator.input.value += '*'">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input type="button" class="gray button" value="0" onclick="calculator.input.value += '0'">
+						<input type="button" class="green button" value="C" onclick="calculator.input.value = ''">
+						<input type="button" class="green button" value="=" onclick="calculator.input.value = eval(calculator.input.value)">
+						<input type="button" class="blue button" value="/" onclick="calculator.input.value += '/'">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	
+	</body>
+</html>
